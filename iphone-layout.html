@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Building a Killer iPhone Layout with CSS - Medium</title>
+    <link rel="stylesheet" href="css/iphone-layout.css">
+  </head>
+  <body>
+    <div class="iphone">
+      <button class="home" title="Home"></button>
+      <span class="speaker" title="Speaker"></span>
+      <span class="camera" title="Camera"></span>
+      <span class="proximity" title="Proximity Sensor"></span>
+
+      <button class="silence" title="Silence Switch"></button>
+      <button class="volume-up" title="Volume Up"></button>
+      <button class="volume-down" title="Volume Down"></button>
+      <button class="sleep" title="Sleep"></button>
+      <div class="screen">
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+        <button class="icon"></button>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script>
+      $(function() {
+        var timeout;
+
+        $(".icon")
+          .on("mousedown touchstart", function() {
+            timeout = setTimeout(function() {
+              $(".iphone").addClass("wiggle");
+            }, 1000);
+          })
+          .on("mouseup touchend", function() {
+            clearTimeout(timeout);
+          });
+
+        $(".home").click(function() {
+          $(".iphone").removeClass("wiggle");
+        });
+      });
+    </script>
+  </body>
+</html>
