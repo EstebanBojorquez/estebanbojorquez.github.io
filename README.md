@@ -6,16 +6,65 @@ My name is Esteban Bojorquez and I'm learning about Git & GitHub, cool huh?
 **No Regrets**
 
 # Useful Git commands:<br>
-[Open the directory] ------------ cd /c/xampp/htdocs/hello-world<br>
-[Print working directory] ------- pwd<br>
-[List all files] ---------------- ls -al<br>
-[Cloning] ----------------------- git clone https://github.com/EstebanBojorquez/hello-world.git<br>
-[Status of edited files] -------- git status<br>
-[Commit -a (all) -m (Message)] -- git commit -a -m "Message"<br>
-[Listing configuration settings]  git config --list<br>
-[Username] ---------------------- git config --global user.name "Your name"<br>
-[Email] ------------------------- git config --global user.email your@example.com<br>
-[Log #commits] ------------------ git log -2<br>
-[Escape VIM] -------------------- :q<br>
-[Remotes associated with project] git remote -v<br>
-[Push (remote) (branch)] -------- git push origin master<br>
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Command</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[Open the directory]</td>
+      <td>cd /c/xampp/htdocs/hello-world</td>
+    </tr>
+    <tr>
+      <td>[Print working directory]</td>
+      <td>pwd</td>
+    </tr>
+    <tr>
+      <td>[List all files]</td>
+      <td>ls -al</td>
+    </tr>
+    <tr>
+      <td>[Cloning]</td>
+      <td>git clone https://github.com/EstebanBojorquez/hello-world.git</td>
+    </tr>
+    <tr>
+      <td>[Status of edited files]</td>
+      <td>git status</td>
+    </tr>
+    <tr>
+      <td>[Commit -a (all) -m (Message)]</td>
+      <td>git commit -a -m "Message"</td>
+    </tr>
+    <tr>
+      <td>[Listing configuration settings]</td>
+      <td>git config --list</td>
+    </tr>
+    <tr>
+      <td>[Username]</td>
+      <td>git config --global user.name "Your name"</td>
+    </tr>
+    <tr>
+      <td>[Email]</td>
+      <td>git config --global user.email your@example.com</td>
+    </tr>
+    <tr>
+      <td>[Log #commits]</td>
+      <td>git log -2</td>
+    </tr>
+    <tr>
+      <td>[Escape VIM]</td>
+      <td>:q</td>
+    </tr>
+    <tr>
+      <td>[Remotes associated with project]</td>
+      <td>git remote -v</td>
+    </tr>
+    <tr>
+      <td>[Push (remote) (branch)]</td>
+      <td>git push origin master</td>
+    </tr>
+  </tbody>
+</table>
