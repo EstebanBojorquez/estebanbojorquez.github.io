@@ -15,7 +15,7 @@ My name is Esteban Bojorquez and I'm learning about Git & GitHub, cool huh?
   </thead>
   <tbody>
    <tr>
-     <td colspan="2" style="text-align:center">Cloning from github</td>
+     <td colspan="2">**Cloning from github**</td>
    </tr>
     <tr>
       <td>[Open the directory]</td>
@@ -70,7 +70,7 @@ My name is Esteban Bojorquez and I'm learning about Git & GitHub, cool huh?
       <td>git push origin master</td>
     </tr>
     <tr>
-     <td colspan="2" style="text-align:center">Initializing from local</td>
+     <td colspan="2">**Initializing from local**</td>
    </tr>
     <tr>
       <td>[Initialize a repo]</td>
