@@ -14,9 +14,9 @@ My name is Esteban Bojorquez and I'm learning about Git & GitHub, cool huh?
     </tr>
   </thead>
   <tbody>
-   <tr>
+    <tr>
      <td colspan="2"><strong>Cloning from github</strong></td>
-   </tr>
+    </tr>
     <tr>
       <td>[Open the directory]</td>
       <td>cd /c/xampp/htdocs/hello-world</td>
@@ -71,7 +71,7 @@ My name is Esteban Bojorquez and I'm learning about Git & GitHub, cool huh?
     </tr>
     <tr>
      <td colspan="2"><strong>Initializing from local</strong></td>
-   </tr>
+    </tr>
     <tr>
       <td>[Initialize a repo]</td>
       <td>git init</td>
@@ -91,6 +91,13 @@ My name is Esteban Bojorquez and I'm learning about Git & GitHub, cool huh?
     <tr>
       <td>[Pull newest copy from github]</td>
       <td>git pull origin master</td>
+    </tr>
+    <tr>
+     <td colspan="2"><strong>Github pages</strong></td>
+    </tr>
+    <tr>
+      <td>[Display content on live url]</td>
+      <td>change default master branch to "gh-pages"</td>
     </tr>
   </tbody>
 </table>
