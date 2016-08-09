@@ -14,6 +14,9 @@ My name is Esteban Bojorquez and I'm learning about Git & GitHub, cool huh?
     </tr>
   </thead>
   <tbody>
+   <tr>
+     <td colspan="2" style="text-align:center">Cloning from github</td>
+   </tr>
     <tr>
       <td>[Open the directory]</td>
       <td>cd /c/xampp/htdocs/hello-world</td>
@@ -65,6 +68,29 @@ My name is Esteban Bojorquez and I'm learning about Git & GitHub, cool huh?
     <tr>
       <td>[Push (remote) (branch)]</td>
       <td>git push origin master</td>
+    </tr>
+    <tr>
+     <td colspan="2" style="text-align:center">Initializing from local</td>
+   </tr>
+    <tr>
+      <td>[Initialize a repo]</td>
+      <td>git init</td>
+    </tr>
+    <tr>
+      <td>[Add a file to the staging area - Previous to commit]</td>
+      <td>git add test.txt</td>
+    </tr>
+    <tr>
+      <td>[Add everything]</td>
+      <td>git add .</td>
+    </tr>
+    <tr>
+      <td>[Add a remote]</td>
+      <td>git remote add origin https://github.com/EstebanBojorquez/hello-world.git</td>
+    </tr>
+    <tr>
+      <td>[Pull newest copy from github]</td>
+      <td>git pull origin master</td>
     </tr>
   </tbody>
 </table>
