@@ -99,5 +99,9 @@ My name is Esteban Bojorquez and I'm learning about Git & GitHub, cool huh?
       <td>[Display content on live url]</td>
       <td>change default master branch to "gh-pages"</td>
     </tr>
+    <tr>
+      <td>[Live url]</td>
+      <td>https://estebanbojorquez.github.io/hello-world/</td>
+    </tr>
   </tbody>
 </table>
