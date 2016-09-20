@@ -101,7 +101,7 @@ My name is Esteban Bojorquez and I'm learning about Git & GitHub, cool huh?
     </tr>
     <tr>
       <td>[Live url]</td>
-      <td>https://estebanbojorquez.github.io/hello-world/</td>
+      <td>https://estebanbojorquez.github.io/hello-world/index.html</td>
     </tr>
   </tbody>
 </table>
