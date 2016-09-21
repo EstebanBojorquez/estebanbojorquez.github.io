@@ -19,7 +19,7 @@ My name is Esteban Bojorquez and I'm learning about Git & GitHub, cool huh?
     </tr>
     <tr>
       <td>[Open the directory]</td>
-      <td>cd /c/xampp/htdocs/hello-world</td>
+      <td>cd c:/xampp/htdocs/hello-world</td>
     </tr>
     <tr>
       <td>[Print working directory]</td>
