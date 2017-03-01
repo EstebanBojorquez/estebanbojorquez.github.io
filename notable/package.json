@@ -1,0 +1,30 @@
+{
+  "name": "notable",
+  "version": "1.0.0",
+  "description": "medium - Build a Node.js API in Under 30 Minutes",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EstebanBojorquez/hello-world.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "EstebanBojorquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EstebanBojorquez/hello-world/issues"
+  },
+  "homepage": "https://github.com/EstebanBojorquez/hello-world#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "mongodb": "^2.2.24"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
