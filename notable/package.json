@@ -2,7 +2,7 @@
   "name": "notable",
   "version": "1.0.0",
   "description": "medium - Build a Node.js API in Under 30 Minutes",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js"
   },
