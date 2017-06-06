@@ -1,0 +1,53 @@
+<!doctytpe html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="/hello-world/favicon-32x32.png" />
+  <title>A Vue.js introduction for people who know just enough jQuery to get by</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
+  <style>
+    button[disabled] {
+      cursor: not-allowed;
+      opacity: .5;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+</head>
+<body class="flex items-center justify-center vh-100">
+  <div class="w-75 center ba b--black-10" id="twitterVue">
+    <div class="pv2 tc bb b--black-10">
+      <h1 class="ma0 f5 normal">Compose New Tweet</h1>
+    </div>
+    <div class="bg-near-white pa3">
+      <textarea v-model="tweet" name="tweet" rows="3" class="w-100 br2 ba b--black-10 pa2" placeholder="Write your tweet here"></textarea>
+      <div class="mt3 flex justify-end">
+        <div class="flex items-center">
+          <span class="mr3 black-70">{{ charactersRemaining }}</span>
+          <button :disabled="tweetIsOutOfRange" class="button-reset bg-blue bn white f6 fw5 pv2 ph3 br2 dim">Tweet</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    const MAX_TWEET_LENGTH = 140;
+
+    new Vue({
+      el: '#twitterVue',
+      data: {
+        tweet: ''
+      },
+      computed: {
+        tweetIsOutOfRange: function() {
+          return this.charactersRemaining == MAX_TWEET_LENGTH
+              || this.charactersRemaining < 0;
+        },
+        charactersRemaining: function() {
+          return MAX_TWEET_LENGTH - this.tweet.length;
+        }
+      }
+    });
+  </script>
+</body>
+</html>
