@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Coin Flip</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    *, *:before, *:after {
+      box-sizing: border-box;
+    }
+
+    .flex-center {
+      display: flex;
+      justify-content: center;
+    }
+
+    body {
+      background-color: #333;
+      min-height: 100vh;
+      margin: 0;
+      padding: 40px;
+      font-family: sans-serif;
+    }
+
+    main {
+      background-color: rgba(255, 255, 255, .9);
+      width: 1440px;
+      align-items: center;
+      border-radius: 5px;
+      text-align: center;
+    }
+    p{
+      display:block;
+    }
+    input{
+      height:30px;
+    }
+    input[type=submit]{
+      -webkit-appearance: button;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var $form = document.getElementById('form'),
+          $number = document.getElementById('number'),
+          $result = document.getElementById('result'),
+          position = 0;
+
+      function flip() {
+        return Math.random() >= 0.5;
+      }
+
+      function randomNumber(n){
+
+        // No need to further calculations
+        if(n === 1) return 0;
+        
+        // Returns a string of random 0s and 1s with length m
+        function randomBinary(m){
+          binary = "";
+          for (var i=0; i<m; i++) {
+            binary+= flip()? "1" : "0";
+          }
+          return binary;
+        }
+
+        // Get the maximum posible value as binary;
+        var maxPosibleValue = n-1;
+        
+        // Calculate the minimal length to express as binary
+        // the maximum posible value
+        var k = maxPosibleValue.toString(2).length;
+        
+        var r;
+        do {
+          // Get a random number
+          r = parseInt(randomBinary(k), 2);
+          // and check if meets the maximum posible value
+        } while (r > maxPosibleValue);
+        
+        return r;
+      }
+
+      function init() {
+        $form.addEventListener('submit', function(evt){
+          evt.preventDefault();
+          var result = randomNumber($number.value);
+
+          $result.innerHTML = result;
+        });
+      }
+
+      init();
+      //Full disclosure, taken straight out of github --> https://gist.github.com/hamg26/643b9f5de4a0abef103ea843f59b71f0
+    });
+  </script>
+</head>
+
+<body class="flex-center">
+  <main class="flex-center">
+    <div class="container">
+      <p>Please enter a number greater than 0 and less than 1,000,000 -- No tricks! I'll be watching you 👀</p>
+      <form action="" id="form">
+        <input type="number" name="number" id="number" min="0" max="1000000" required>
+        <input type="submit" value="Go">
+      </form>
+      <p>Result: <span id="result"></span></p>
+    </div>
+  </main>
+</body>
+
+</html>
